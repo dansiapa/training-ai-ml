@@ -12,7 +12,7 @@ from sklearn.metrics import mean_absolute_error, mean_absolute_percentage_error,
 import pickle
 import io
 
-st.set_page_config(page_title="Machine Learning Studio Pro", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="Training AMDI - Machine Learning", page_icon="⚡", layout="wide")
 
 st.markdown("""
     <style>
@@ -38,7 +38,7 @@ def main():
         st.session_state.is_trained = False
 
     with st.sidebar:
-        st.markdown("<h1 style='color: #00c853;'>ML Control Room</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='color: #00c853;'>Machine Learning Test</h1>", unsafe_allow_html=True)
         file = st.file_uploader("Upload Dataset (CSV/XLSX)", type=['csv', 'xlsx'])
         
         if file:
@@ -113,8 +113,8 @@ def main():
                     status.update(label="✅ Selesai!", state="complete")
 
     if not st.session_state.is_trained:
-        st.markdown("<div class='main-header'>Machine Learning Studio</div>", unsafe_allow_html=True)
-        st.info("Unggah dataset dan klik 'Execute' untuk memulai.")
+        st.markdown("<div class='main-header'>Machine Learning!</div>", unsafe_allow_html=True)
+        st.info("Semoga AMAN yahh BRO!!")
         return
 
     tab1, tab2, tab3, tab4 = st.tabs(["🏆 COMPETITION", "📈 ANALYTICS", "🔮 PREDICTION", "📄 REPORT"])
